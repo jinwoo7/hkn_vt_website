@@ -14,10 +14,9 @@
     body { font-size: 18px; }
     section { padding: 60px 0; }
     
-    
     .long-copy {
-        width: 80%;
-        margin-left: 10%
+        width: 90%;
+        margin: 0px auto;
     }
     
     .logo {
@@ -42,6 +41,11 @@
         margin-left: 0%;
     }
     
+    .intro-text-box {
+        font-size: 90%;
+        width: 90%;
+    }
+    
     .contact-form { width: 80%; }
 }
 
@@ -55,7 +59,7 @@
     .row,
     .hero-text-box { padding: 0 4%; }
     
-    .hero-text-box .btn:last-of-type {
+    .hero-text-box .bttn:last-of-type {
         margin-top: 15px;
     }
     
@@ -69,7 +73,7 @@
 
     .desc {
         font-weight: 300;
-        font-size: 65%;
+        font-size: 80%;
         margin-bottom: 20px;
     }
     
@@ -81,10 +85,10 @@
     h1 { font-size: 180%;}
     h2 { font-size: 150%;}
     
-    .long-copy {
-        width: 100%;
-        margin: 10px 5%;
-    }
+    .section-questions {
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .60), rgba(255, 255, 255, .60)), url(../img/burrus_snow.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .60), rgba(255, 255, 255, .60)), url(../img/burrus_snow.jpg);
+}
     
     .section-aboutMe .long-copy {
     width: 90%;
@@ -94,6 +98,18 @@
     
     .section-aboutMe cite img {
         height: 90px;
+    }
+    
+    .carousel-caption {
+        font-size: 90%;
+    }
+    
+    #myCarousel {
+        width: 80%;
+    }
+    
+    .section-form .row .row:last-child .col {
+        text-align: center;
     }
     
     .app-screen { width: 40%; }
@@ -116,14 +132,48 @@
     .logo {
         width: 20%;
     }
+    
+    .carousel-caption {
+        font-size: 60%;
+    }
+    
+    .bttn {
+        margin: 5px auto;
+    }
+    
     section { padding: 25px 0; }
     .contact-form {width: 100%; }
+    
 }
 
 /* Small tablet to big tablet: from 0px to 500px */
 @media only screen and (max-height: 520px) {
+    .intro-text-box {
+        font-size: 80%;
+    }
     
+    .intro-text-box .row img{
+        display: none;
+    }
+    
+    .name {
+        margin-bottom: 0px;
+    }
+    
+    .desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .logo {
         width: 9%;
+    }
+    
+    .bttn {
+        margin: 5px auto;
+    }
+    
+    header .js--bounce-arrow {
+        font-size: 150%;
     }
 }

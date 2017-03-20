@@ -84,7 +84,7 @@ h1 {
 }
 
 .name {
-    font-size: 420%;
+    font-size: 330%;
     color: white;
     margin-bottom: 30px;
 }
@@ -92,7 +92,7 @@ h1 {
 .desc {
     color: white;
     font-weight: 300;
-    font-size: 150%;
+    font-size: 100%;
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -116,6 +116,7 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 
 h3 {
@@ -133,7 +134,6 @@ h2:after {
     content: " ";
     width: 150px;
     margin: 30px auto;
-    
 }
 
 /* ----- PARAGRAPHS ------ */
@@ -142,6 +142,7 @@ h2:after {
     line-height: 145%;
     width: 70%;
     margin-left: 15%
+    
 }
 
 .box p {
@@ -178,24 +179,22 @@ h2:after {
 a:link,
 a:visited {
     text-decoration: none;
-    color: black;
+    color: #000;
     padding-bottom: 0px;
 }
 
 a:hover,
 a:active {
-    color: #555;
-    border-bottom: 1px solid transparent;
+    color: #208ec7;
 }
 
 /* ----- BUTTONS ------ */
 
-.btn:link,
-.btn:visited,
-input[type=submit] {
+.bttn:link,
+.bttn:visited {
     display: inline-block;
     padding: 10px 30px;
-    font-weight: 300;
+    font-weight: 200;
     text-decoration: none;
     border-radius: 15px;
     -webkit-transition:background-color 0.2s, border 0.2s, color 0.2s;
@@ -204,30 +203,26 @@ input[type=submit] {
 }
 
 .btn-full:link,
-.btn-full:visited,
-input[type=submit] {
+.btn-full:visited {
     background-color: #208ec7;
     border: 1px solid #208ec7;
-    color: #fff;
+    color: #ddd;
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited {
     border: 2px solid #208ec7;
     color: #208ec7;
 }
 
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+.bttn:hover,
+.bttn:active {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 15px;
     background-color: #13618b;
-    color: white;
 }
 
 .btn-full:hover,
@@ -237,9 +232,25 @@ input[type=submit]:active {
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid #13618b;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+    color: #333;
+    background-color: #208ec7;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    color: #fff;
+    background-color: #13618b;
+}
+
+
+.btn-primary {
+    width: 100px;
 }
 
 /* ---------------------------- */
@@ -248,7 +259,7 @@ input[type=submit]:active {
 
 .navbar-inverse {
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 10px;
+    padding: 5px;
 }
 
 .navbar-brand:first-child {
@@ -259,6 +270,27 @@ input[type=submit]:active {
     margin: auto 10px;
     padding: auto;
     height: inherit;
+}
+
+.nav a:link,
+.nav a:visited,
+input[type=submit] {
+    background-color: rgba(0, 0, 0, 0);
+    color: #aaa;
+    -webkit-transition:background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav a:hover,
+.nav a:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 /* Not important */
@@ -281,7 +313,7 @@ header {
     background-attachment: fixed;
 }
 
-header .row:last-child {
+header .js--bounce-arrow {
     width: 100%;
     margin: 0px auto;
     color: white;
@@ -300,7 +332,7 @@ header a {
 }
 
 header a:link,
-a:visited {
+header a:visited {
     text-decoration: none;
     color: white;
 }
@@ -318,7 +350,7 @@ header a:active {
 .intro-text-box {
     text-align: center;
     position: absolute;
-    width: 1140px;
+    width: 80;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -351,13 +383,9 @@ header .customShake {
     background-position: center;
     background-size: cover;
     text-align: center;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .70), rgba(255, 255, 255, .70)), url(../img/vatechvisitorcenter.jpg);
-    background-image: linear-gradient(rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)), url(../img/vatechvisitorcenter.jpg);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, .65)), url(../img/vatechvisitorcenter.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, .65)), url(../img/vatechvisitorcenter.jpg);
     font-weight: bold;
-}
-
-.section-aboutUs h2 {
-    font-weight: 700;
 }
 
 .section-aboutUs .long-copy {
@@ -366,7 +394,12 @@ header .customShake {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 40px;
-    font-size: 110%;
+    font-size: 90%;
+}
+
+.section-aboutUs img {
+    width: 140px;
+    height: auto;
 }
 
 .long-copy .specialties {
@@ -376,64 +409,6 @@ header .customShake {
 .section-aboutUs .row {
     margin: 0px auto;
     text-align: center;
-}
-
-/* --------------------------------- */
-/* Frequently Asked Questions */
-/* --------------------------------- */
-
-.section-questions {
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .70), rgba(255, 255, 255, .70)), url(../img/burrus_snow.jpg);
-    background-image: linear-gradient(rgba(255, 255, 255, .10), rgba(255, 255, 255, .10)), url(../img/burrus_snow.jpg);
-    font-weight: bold;
-}
-
-.section-questions h2 {
-    font-weight: 700;
-}
-
-.section-questions .long-copy {
-    color: black;
-    width: 70%;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    font-size: 110%;
-}
-
-.section-questions .row {
-    margin: 0px auto;
-    text-align: center;
-}
-
-.item img {
-    opacity: 0.85;
-}
-
-.carousel-caption {
-    top: 5%;
-}
-
-.carousel-caption h3 {
-    font-size: 130%;
-    color: #208ec7;
-    margin: 0px;
-    margin-bottom: 10px;
-}
-
-.carousel-caption p {
-    color: #e2e2e2;
-    padding: 0px;
-    text-align: left;
-}
-
-#myCarousel {
-    margin: 0px auto;
-    width: 450px;
-    height: auto;
 }
 
 /* --------------------------------- */
@@ -489,16 +464,71 @@ header .customShake {
 }
 
 .officer_description {
-    font-size: 150%;
+    font-size: 110%;
 }
 
 .officer-box ul{
-    font-size: 120%;
+    font-size: 90%;
     list-style: none;
 }
 
 .officer-box ul li {
     padding: 5px 0;
+}
+
+/* --------------------------------- */
+/* Frequently Asked Questions */
+/* --------------------------------- */
+
+.section-questions {
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .70), rgba(255, 255, 255, .70)), url(../img/burrus_snow.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .10), rgba(255, 255, 255, .10)), url(../img/burrus_snow.jpg);
+    font-weight: bold;
+}
+
+.section-questions .long-copy {
+    color: black;
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 90%;
+}
+
+.section-questions .row {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.item img {
+    opacity: 0.90;
+}
+
+.carousel-caption h3 {
+    font-size: 100%;
+    color: #289ad3;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    color: #e2e2e2;
+    font-size: 80%;
+    text-align: left;
+}
+
+.carousel-caption {
+    top: 2%;
+    text-shadow: none;
+}
+
+#myCarousel {
+    margin: 0px auto;
+    width: 450px;
+    height: auto;
 }
 
 /* --------------------------------- */
@@ -510,35 +540,34 @@ header .customShake {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/stadium.jpg);
     background-size: cover;
     background-attachment: fixed;
+    color: #e2e2e2;
 }
 
 .contact-form {
     width: 60%;
     margin: 0 auto;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .section-form .row {
     margin: 10px auto;
 }
 
-.section-form h2 {
-    color: #e2e2e2;;
-    font-weight: 700;
-}
-
+.section-form h2,
 .section-form label {
-    color: #e2e2e2;
+    
 }
 
 input[type=text],
 input[type=email],
 select,
 textarea {
+    resize: none;
     width: 100%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
+    color: #333333;
 }
 
 textarea {
@@ -551,15 +580,8 @@ input[type=checkbox] {
 
 *:focus {outline: none;}
 
-.form-messages {
-    width:70%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-    font-weight: 500;
+.btn-primary {
+    color: #e2e2e2;
 }
 
 /* --------------------------------- */
@@ -569,7 +591,7 @@ input[type=checkbox] {
 footer {
     background-color: #333;
     padding: 40px;
-    font-size: 100%;
+    font-size: 80%;
 }
 
 footer .row {
